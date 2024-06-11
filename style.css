@@ -1,0 +1,112 @@
+body {
+    margin: 0;
+    box-sizing: border-box;
+    background-color: #555;
+}
+
+/* Style of completed form */
+
+.Log-In {
+    /* Color de fondo, borde y dimensiones del formulario*/
+    background-color: aliceblue;
+    width: 400px;
+    height: 500px;
+    box-sizing: border-box;
+    border-radius: 5px;
+    padding: 40px;
+
+    /* ponere sombra al formulario */
+    box-shadow: 0px 0px 40px 10px rgb(34, 34, 34);
+
+
+    /* Posición del formulario, este se va a quedar en la posición que le diga independientemente de los demas elementos de la pagina */
+    position: absolute;
+
+    /* Centrar formulario en el medio de la pagina */
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+    /* Disponer elementos del div de manera vertical*/
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+/* center all sons of label 'form' */
+
+form > * {
+    left: 50%;
+    transform: translate(-50%);
+}
+
+/* style of e-mail/user label and input */
+
+.usuario {
+    position: absolute;
+    font-weight: bold;
+    margin-top: 15px;
+}
+
+.usuario__input {
+    position: relative;
+    margin-top: 40px;
+    height: 30px;
+    width: 300px;
+    border: none;
+    border-bottom: 2px solid black;
+    background-color: aliceblue;
+    box-sizing: border-box;
+    padding-top: 5px;
+}
+
+.usuario__input:focus {
+    outline: none;
+}
+
+/* style of password label and input */
+
+.password {
+    position: absolute;
+    font-weight: bold;
+    margin-top: 120px;
+}
+
+.password__input {
+    position: relative;
+    margin-top: 70px;
+    height: 30px;
+    width: 300px;
+    border: none;
+    border-bottom: 2px solid black;
+    background-color: aliceblue;
+    box-sizing: border-box;
+    padding-top: 5px;
+}
+
+.password__input:focus {
+    outline: none;
+}
+
+/* styles of submit */
+
+.submit {
+    position: absolute;
+    margin-top: 160px;
+    height: 40px;
+    width: 100px;
+    background: #61b5e9; 
+    cursor: pointer;
+    font-weight: bold;
+    border: none;
+    border-radius: 3px;
+}
+
+/* style of link to create an account */
+
+.create-account {
+    position: absolute;
+    box-sizing: border-box;
+    top: 400px;
+    text-decoration: none;
+}
